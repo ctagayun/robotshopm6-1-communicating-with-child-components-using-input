@@ -24,7 +24,12 @@
     and filter the products to display -->
 
     <li class="product-item" *ngFor="let product of getFilteredProducts()">
-      <!-- <div class="product">
+
+      <bot-product-details>
+        
+      </bot-product-details>
+      <!-- Move this to bot-product-details-component.html
+      <div class="product">
         <div class="product-details">
           <img [src]="getImageUrl(product)" [alt]="product.name" />
           <div class="product-info">
@@ -45,7 +50,7 @@
           <button class="cta" (click)="addToCart(product)">Buy</button>
         </div>
       </div> -->
-      
+
     </li>
   </ul>
 </div>

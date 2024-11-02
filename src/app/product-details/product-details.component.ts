@@ -8,7 +8,8 @@ import { IProduct } from '../catalog/product.model';
 })
 export class ProductDetailsComponent {
 
-  product: IProduct;
+  //The exclamation point tells Angular to ignore that it is not initialized
+  product!: IProduct;
 
   getImageUrl(product: IProduct){
     if(!product) return '';
