@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { IProduct } from '../catalog/product.model';
 
 @Component({
@@ -9,7 +9,7 @@ import { IProduct } from '../catalog/product.model';
 export class ProductDetailsComponent {
 
   //The exclamation point tells Angular to ignore that it is not initialized
-  product!: IProduct;
+  @Input() product!: IProduct;
 
   getImageUrl(product: IProduct){
     if(!product) return '';

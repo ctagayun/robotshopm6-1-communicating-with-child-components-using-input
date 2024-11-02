@@ -25,7 +25,12 @@
 
     <li class="product-item" *ngFor="let product of getFilteredProducts()">
 
-      <bot-product-details> </bot-product-details>
+      <!-- This where the parent tells the child component that it wants it to receive some data.
+      we inject the "product" variable from the "ngFor". The product on the left side is
+      the "product" variable ProductDetailsComponent
+       -->
+      <bot-product-details [product]= "product"> </bot-product-details>
+
       <!-- Move this to bot-product-details-component.html
       <div class="product">
         <div class="product-details">

@@ -146,6 +146,14 @@ Module 6: Communicating Between Angular Components
      - ng generate component product-details  (navigate frist to the src/app)
 
      - cut and paste lines 27-47 of Component.html and paste it in product-details component
+
+     - cut product-deatils css in catalog.css and paste it into product-details.css
+
+     - now put @input decorator in product-details.component
+        The exclamation point tells Angular to ignore that it is not initialized
+          @Input() product!: IProduct;
+        The @Input tells any child that it can receive this type of data from the parent
+
   - communcating with parent component
 
 
