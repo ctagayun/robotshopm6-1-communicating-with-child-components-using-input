@@ -12,7 +12,7 @@ export class CatalogComponent {
   filter: string = '';  //filter is an empty string
 
   addToCart(product: IProduct) {
-    this.cart.push(product);
+    //this.cart.push(product);
    console.log(`product ${product.name} added to cart`);
   }
 
